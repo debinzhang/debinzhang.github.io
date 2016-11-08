@@ -1,21 +1,48 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <style>
 @font-face {
-font-family: myFirstFont;
-   src: url('./webFont/SansationLight.woff');
+   font-family: debinFont1;
+   src: url(./webFont/SansationLight.woff);
 }
 
-div {
-   font-family: myFirstFont;
+@font-face {
+   font-family: debinFont2;
+   src: url(./webFont/SansationLight.ttf);
+}
+
+@font-face {
+   font-family: debinFont3;
+   src: url("https://fast.fonts.net/dv2/14/64017d81-9430-4cba-8219-8f5cc28b923e.woff2");
+}
+
+.div1 {
+   font-family: debinFont1;
+}
+
+.div2 {
+   font-family: debinFont2;
+}
+
+.div3 {
+   font-family: debinFont3;
 }
 </style>
 </head>
 <body>
 
-<div>
-With CSS3, websites can finally use fonts other than the pre-selected "web-safe" fonts.  Test site for debin!
+<div class="div1">
+With CSS3, websites can finally use fonts other than the pre-selected "web-safe" fonts. 
+</div>
+
+<div class="div2">
+2nd test.
+</div>
+
+<div class="div3">
+test to see what may happen
 </div>
 
 <p><b>Note:</b> Internet Explorer 8 and earlier, do not support the @font-face rule.</p>
