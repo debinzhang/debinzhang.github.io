@@ -1,17 +1,25 @@
 <head>
   <meta charset="utf-8">
-  <title>Image preload example</title>
+  <title>Responsive preload example</title>
 
   <link rel="preload" href="mint1.jpg" as="image" media="(max-width: 600px)">
+  <link rel="preload" href="mint3.jpg" as="image" media="(min-width: 601px)">
 
+  <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-  <h1>proload test 1</h1>
-  <canvas></canvas>
+  <header>
+    <h1>My site</h1>
+  </header>
 
-  <p>
-  <img src=mint3.jpg>
-  </p>
+  <script>
+    var mediaQueryList = window.matchMedia("(max-width: 600px)");
+    var header = document.querySelector('header');
 
+    if(mediaQueryList.matches) {
+      header.style.backgroundImage = 'url(mint1.jpg)';
+    } else {
+      header.style.backgroundImage = 'url(mint3.jpg)';
+    }
+  </script>
 </body>
