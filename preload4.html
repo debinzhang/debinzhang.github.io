@@ -12,7 +12,7 @@
 
     <link rel="preload" href="mint1.jpg" as="fetch" >
     <link rel="preload" href="mint3.jpg" as="fetch" >
-    <link rel="stylesheet" href="main.css" as="style">
+    <link rel="preload" href="main.css" as="style">
     
     </head>
   <body>
@@ -21,11 +21,6 @@
     </header>
 
     <p id="demo">Will display sub resources: </p>
-
-    <script>
-      var resource = window.performance.getEntries()[0];
-      <button type="button" onclick='document.getElementById("demo").innerHTML = "fake resource" '>Click Me!</button>
-    </script>
 
     <img src="mount.jpeg" >
     <img src="s_man.gif" style="display: none;" />
