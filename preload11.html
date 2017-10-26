@@ -3,26 +3,30 @@
  <style> 
       @font-face {
       font-family: DebinsFontLight;
-      src: url(sansation_light.woff);
+      src: url(sansation_light.woff);  <!-- with hint -->
       }
 
       @font-face {
       font-family: DebinsFontBold;
-      src: url(sansation_bold.woff);
+      src: url(sansation_bold.woff);  <!-- no hint -->
       }
 
 </style>
     
   </head>
   <body>
-    <p> preload 11.3 </p>
+    <p> preload 11.4 </p>
 
-    <img src="http://debinzhang.github.io/flower_1.jpg">
-    <img src="http://debinzhang.github.io/flower_2.jpg">
-    <img src="http://debinzhang.github.io/flower_3.jpg">
-    <img src="http://www.simpletest.org/images/simpletest-contribute.png">
-    <img src="http://simplegreen.com/images/landing_v2/household_320.png"> <br>
+    <img src="http://debinzhang.github.io/flower_1.jpg">  <!-- with hint -->
+    
+    <img src="http://debinzhang.github.io/flower_2.jpg"> <!-- no hint -->
+    
+    <img src="http://www.simpletest.org/images/simpletest-contribute.png">  <!-- with cross-domin hint -->
+    
+    <img src="http://simplegreen.com/images/landing_v2/household_320.png">  <!-- no hint -->
+    
     <div style="font-family: DebinsFontLight"> This is debin's test font light. </div> <br>
+    
     <div style="font-family: DebinsFontBold"> This is debin's test font bold. </div>
 </body>
 <title>
