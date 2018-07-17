@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><b>video/mp4;codecs="avc1.4d401f": </b></p>
+VideoCanPlay:
+<p id="videoCanPlayType"></p>
+isTypeSupported:
+<p id="videoSupport"></p>
+
+<br></br>
+
+<p><b>Audio/mp4;codecs="mp4a.40.2": </b></P>
+audioCanPlay:
+<p id="audioCanPlayType"></p>
+isTypeSupported:
+<p id="audioSupport"></p>
+
+
+<script>
+
+var videoType = 'video/mp4;codecs="avc1.4d401f"';
+var audioType = 'audio/mp4;codecs="mp4a.40.2"';
+
+var obj = document.createElement('video');
+document.getElementById("videoCanPlayType").innerHTML = 
+obj.canPlayType(videoType); 
+
+document.getElementById("videoSupport").innerHTML =  (MediaRecorder.isTypeSupported(videoType))? "Maybe" : "Nope";
+
+
+
+var obj = document.createElement('audio');
+document.getElementById("audioCanPlayType").innerHTML =
+obj.canPlayType(audioType);
+
+document.getElementById("audioSupport").innerHTML =  (MediaRecorder.isTypeSupported(audioType))? "Maybe" : "Nope";
+
+var types = ["video/webm", 
+             "audio/webm", 
+             "video/webm\;codecs=vp8", 
+             "video/webm\;codecs=daala", 
+             "video/webm\;codecs=h264", 
+             "audio/webm\;codecs=opus", 
+             "video/mpeg"];
+
+for (var i in types) { 
+  console.log( "Is " + types[i] + " supported? " + (MediaRecorder.isTypeSupported(types[i]) ? "Maybe!" : "Nope :(")); 
+}
+
+</script>
+
+</body>
+</html>
