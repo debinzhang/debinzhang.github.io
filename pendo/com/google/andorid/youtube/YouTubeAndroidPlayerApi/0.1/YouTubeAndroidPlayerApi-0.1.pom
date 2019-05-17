@@ -5,5 +5,5 @@
   <groupId>com.google.andorid.youtube</groupId>
   <artifactId>YouTubeAndroidPlayerApi</artifactId>
   <version>0.1</version>
-  <description>POM was created from install:install-file</description>
-</project>
+  <scope>implementation</scope>
+  </project>
