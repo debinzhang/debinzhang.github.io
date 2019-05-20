@@ -80,12 +80,6 @@
       <scope>implementation</scope>
     </dependency>
     <dependency>
-      <groupId>com.google.andorid.youtube</groupId>
-      <artifactId>YouTubeAndroidPlayerApi</artifactId>
-      <version>0.1</version>
-      <scope>implementation</scope>
-    </dependency>
-    <dependency>
       <groupId>com.daimajia.easing</groupId>
       <artifactId>library</artifactId>
       <version>2.0</version>
