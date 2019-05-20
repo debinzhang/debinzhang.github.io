@@ -5,5 +5,5 @@
   <groupId>com.google.andorid.youtube</groupId>
   <artifactId>YouTubeAndroidPlayerApi</artifactId>
   <version>0.1</version>
-  <packaging>jar</packaging>
+  <packaging>arr</packaging>
   </project>
